@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Project: Event invite</title>
+    <!-- Link to Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Poiret+One|Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      #background_image {
+        width: 100%;
+        border: 10px double rgb(0, 213, 237);
+        border-left: 10px solid rgb(0, 213, 237);
+        position: absolute;
+        top: 1px;
+        z-index: 1;
+      }
+
+      #heading_background {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 130px;
+        position: absolute;
+        top: 16px;
+        left: 104px;
+        z-index: 2;
+      }
+
+      #heading {
+        color: rgb(3, 129, 171);
+        font-family: "Raleway", sans-serif;
+        font-size: 130px;
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        z-index: 3;
+      }
+
+      #what_background {
+        color: white;
+        font-family: "Poiret One", cursive;
+        font-size: 50px;
+        position: absolute;
+        top: 298px;
+        left: 102px;
+        z-index: 4;
+      }
+
+      #what {
+        color: rgb(3, 129, 171);
+        font-family: "Poiret One", cursive;
+        font-size: 50px;
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        z-index: 5;
+      }
+
+      #when_background {
+        color: white;
+        font-family: "Poiret One", cursive;
+        font-size: 50px;
+        position: absolute;
+        top: 358px;
+        left: 102px;
+        z-index: 6;
+      }
+
+      #when {
+        color: rgb(3, 129, 171);
+        font-family: "Poiret One", cursive;
+        font-size: 50px;
+        position: absolute;
+        top: 360px;
+        left: 100px;
+        z-index: 7;
+      }
+
+      #where_background {
+        color: white;
+        font-family: "Poiret One", cursive;
+        font-size: 50px;
+        position: absolute;
+        top: 418px;
+        left: 102px;
+        z-index: 8;
+      }
+
+      #where {
+        color: rgb(3, 129, 171);
+        font-family: "Poiret One", cursive;
+        font-size: 50px;
+        position: absolute;
+        top: 420px;
+        left: 100px;
+        z-index: 9;
+      }
+
+      .pink_balloon {
+        color: rgb(237, 154, 234);
+      }
+
+      .green_balloon {
+        color: rgb(10, 168, 15);
+      }
+
+      #rsvp_background {
+        color: white;
+        font-family: "Poiret One", cursive;
+        font-size: 50px;
+        position: absolute;
+        top: 548px;
+        left: 102px;
+        z-index: 10;
+      }
+
+      #rsvp {
+        color: rgb(3, 129, 171);
+        font-family: "Poiret One", cursive;
+        font-size: 50px;
+        position: absolute;
+        top: 550px;
+        left: 100px;
+        z-index: 11;
+      }
+
+      #menu_background {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 40px;
+        position: absolute;
+        top: 648px;
+        left: 102px;
+        z-index: 12;
+      }
+
+      #menu {
+        color: rgb(3, 129, 171);
+        font-family: "Raleway", sans-serif;
+        font-size: 40px;
+        position: absolute;
+        top: 650px;
+        left: 100px;
+        z-index: 13;
+      }
+
+      #note_background {
+        color: white;
+        font-family: 'Indie Flower', cursive;
+        font-size: 35px;
+        position: absolute;
+        top: 798px;
+        left: 102px;
+        z-index: 14;
+      }
+
+      #note {
+        color: rgb(3, 129, 171);
+        font-family: "Indie Flower", cursive;
+        font-size: 35px;
+        position: absolute;
+        top: 800px;
+        left: 100px;
+        z-index: 15;
+      }
+
+    </style>
+  </head>
+  <body>
+      <h1 id="heading">You're invited!!</h1>
+      <h1 id="heading_background">You're invited!!</h1>
+
+      <h2 id="what">WHAT: To Lucy's 13th Birthday Party</h2>
+      <h2 id="what_background">WHAT: To Lucy's 13th Birthday Party</h2>
+
+      <h2 id="when">WHEN: Saturday, November 9th at 4:00pm</h2>
+      <h2 id="when_background">WHEN: Saturday, November 9th at 4:00pm</h2>
+
+      <h2 id="where">WHERE: Outside the Tennessee Aquarium. Look <br />for <span class="pink_balloon">pink</span> and <span class="green_balloon">green</span> balloons.</h2>
+      <h2 id="where_background">WHERE: Outside the Tennessee Aquarium. Look <br />for pink and green balloons.</h2>
+
+      <h2 id="rsvp">RSVP: 555-555-5555, 888-888-8888</h2>
+      <h2 id="rsvp_background">RSVP: 555-555-5555, 888-888-8888</h2>
+
+      <p id="menu">-MENU: We will be having Domino's Pizza, snacks, and <br> CAKE!!!</p>
+      <p id="menu_background">-MENU: We will be having Domino's Pizza, snacks, and <br> CAKE!!!</p>
+
+      <p id="note">NOTE: We will be going through both the River and the Ocean Journey <br> buildings. Also, anyone who would like to join Lucy in the Sleep in the Deep experience can.</p>
+      <p id="note_background">NOTE: We will be going through both the River and the Ocean Journey <br> buildings. Also, anyone who would like to join Lucy in the Sleep in the Deep experience can.</p>
+
+      <image id="background_image" src="https://images.pexels.com/photos/255377/pexels-photo-255377.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+  </body>
+</html>
